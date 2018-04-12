@@ -1,7 +1,7 @@
-while(1)
+function()
 {
 	var soundurl = SoundCache.getSound("atp:/music.wav");
-    var soundvolume = 1.0;
+    var soundvolume = 2.0;
 
     Ent = entityID;   
     var copyEnt = Entities.getEntityProperties(Ent, ["position"]);
@@ -10,5 +10,5 @@ while(1)
     var basepos = data.position;
              
 
-    Audio.playSound(soundurl, { loop: false, position: basepos ,volume: soundvolume });
+    Audio.playSound(soundurl, { loop: true, position: basepos ,volume: soundvolume });
 }
